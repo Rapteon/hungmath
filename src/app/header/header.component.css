@@ -1,0 +1,14 @@
+@media only screen and (min-width: 320px) {
+  /* Styles here */
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:1em; 
+  }
+
+  #header > p {
+    color: var(--red);
+  }
+}

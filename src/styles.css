@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --light-grey: #cbcbcb;
+  --red: #f17a7a;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: "Rokkitt";
+  src: url("./assets/fonts/Rokkitt-VariableFont_wght.ttf");
+}
+
+.primary-button {
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+@media only screen and (min-width: 320px) {
+  /* Styles here */
+}
+
+body {
+  font-family: "Rokkitt";
+}
