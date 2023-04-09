@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HangmanComponent } from './hangman/hangman.component';
 import { StartComponent } from './start/start.component';
+import { GameComponent } from './game/game.component';
+import { PuzzleComponent } from './puzzle/puzzle.component';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { StartComponent } from './start/start.component';
     PageNotFoundComponent,
     HangmanComponent,
     StartComponent,
+    GameComponent,
+    PuzzleComponent,
+    TimerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'start',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./start.component.css']
 })
 export class StartComponent {
+  constructor(private router: Router) {}
 
+  startGame(): void {
+    this.router.navigateByUrl('game');
+  }
 }

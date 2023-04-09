@@ -1,0 +1,12 @@
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#puzzle-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
