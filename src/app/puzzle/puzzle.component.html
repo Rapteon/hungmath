@@ -1,1 +1,9 @@
-<p>puzzle works!</p>
+<div id="puzzle">
+  <label>Solve</label>
+  <div class="primary-button operand">{{ puzzle.operandOne }}</div>
+  <div id="operator">{{ puzzle.operator }}</div>
+  <div class="primary-button operand">{{ puzzle.operandTwo }}</div>
+  <hr id="line" />
+  <input #solution type="text" />
+  <button type="button" (click)="checkSolution(solution.value)">Check</button>
+</div>

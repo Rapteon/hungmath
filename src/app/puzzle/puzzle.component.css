@@ -1,0 +1,32 @@
+#puzzle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 4px;
+}
+label {
+    grid-column: 1/2;
+    color: var(--light-grey);
+}
+.operand {
+    border-color: var(--light-grey);
+    padding: 4px;
+}
+
+#operator {
+    color: var(--red);
+}
+
+#line {
+    grid-column-start: span 2;
+    width: 100%;
+}
+
+input {
+    grid-column: 2/2;
+}
+
+button {
+    margin: 4px;
+    grid-column: 1/-1;
+}

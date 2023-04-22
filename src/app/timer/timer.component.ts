@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./timer.component.css']
 })
 export class TimerComponent {
-
 }
