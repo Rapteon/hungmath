@@ -9,6 +9,7 @@
   animation-name: "rotate";
   animation-duration:3s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-iteration-count: infinite;
 }
 
 @keyframes rotate {
@@ -18,9 +19,10 @@
   }
   50% {
     /* transform: rotate(180deg); */
-    transform: rotateY(90deg);
+    transform: rotateY(180deg);
   }
   100% {
+    /* transform: rotate(0deg); */
     transform: rotateY(0deg);
   }
 }

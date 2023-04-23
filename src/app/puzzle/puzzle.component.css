@@ -17,6 +17,7 @@ label {
     color: var(--red);
     font-size: x-large;
     font-weight: bolder;
+    text-align: end;
 }
 
 #line {
@@ -29,6 +30,7 @@ input {
 }
 
 button {
-    margin: 4px;
+    margin-top: 4px;
     grid-column: 1/-1;
+    background-color: var(--red);
 }

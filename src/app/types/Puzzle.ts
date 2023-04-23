@@ -6,7 +6,7 @@ export class Puzzle {
   private _operators: string[];
 
   constructor(limit: number) {
-    this._operators = ['+', '-', '÷', '×'];
+    this._operators = ['+', '-', '×', '÷'];
     this._operandOne = Math.floor(Math.random() * limit);
     this._operandTwo = Math.floor(Math.random() * limit);
     this._operator = this.generateRandomOperator();
@@ -31,9 +31,7 @@ export class Puzzle {
   }
 
   public check(solution: string): boolean {
-    console.log(Number(solution));
-    console.log(this._solution);
-    return Number(solution) === this._solution;
+    return Number(solution).toFixed(2) === this._solution.toFixed(2);
   }
 
   private generateRandomOperator(): string {
@@ -57,7 +55,7 @@ export class Puzzle {
       case '×':
         return operandOne * operandTwo;
       case '÷':
-        return Number.parseFloat((operandOne / operandTwo).toFixed(2));
+        return operandOne / operandTwo;
       default:
         return 0;
     }

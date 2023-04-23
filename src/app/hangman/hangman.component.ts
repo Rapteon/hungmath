@@ -47,7 +47,7 @@ export class HangmanComponent {
       this._injureHangman(head);
     }
 
-    this.onHangmanDead.emit(this.mistakeCount === 7);
+    this.onHangmanDead.emit(this.mistakeCount === 6);
   }
 
   private _findSVGElement(querySelector:string): SVGElement {

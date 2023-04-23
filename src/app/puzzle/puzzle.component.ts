@@ -21,7 +21,6 @@ export class PuzzleComponent implements OnInit {
   
   checkSolution(solution: string) {
     if (this.puzzle.check(solution)) {
-      alert('Correct');
       this.isCorrectSolution.emit(true);
     }
     else {
