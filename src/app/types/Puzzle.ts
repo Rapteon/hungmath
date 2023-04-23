@@ -37,7 +37,10 @@ export class Puzzle {
   }
 
   private generateRandomOperator(): string {
-    const randomIndex = Math.floor(Math.random() * this._operators.length);
+    let randomIndex;
+    if (this._operandTwo === 0)
+      randomIndex = Math.floor(Math.random() * (this._operators.length - 1));
+    else randomIndex = Math.floor(Math.random() * this._operators.length);
     return this._operators[randomIndex];
   }
 
@@ -46,12 +49,17 @@ export class Puzzle {
     operandTwo: number,
     operator: string
   ): number {
-    switch(operator) {
-        case '+': return operandOne + operandTwo;
-        case '-': return operandOne - operandTwo;
-        case '×': return operandOne * operandTwo;
-        case '÷': return Number.parseFloat((operandOne / operandTwo).toFixed(2));
-        default: return 0;
+    switch (operator) {
+      case '+':
+        return operandOne + operandTwo;
+      case '-':
+        return operandOne - operandTwo;
+      case '×':
+        return operandOne * operandTwo;
+      case '÷':
+        return Number.parseFloat((operandOne / operandTwo).toFixed(2));
+      default:
+        return 0;
     }
   }
 }

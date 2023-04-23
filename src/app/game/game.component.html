@@ -1,8 +1,13 @@
-<statistics #statistics></statistics>
+<statistics [statistics]="gameStatistics"></statistics>
 <div id="game">
-    <hangman></hangman>
-    <!-- <timer></timer> -->
-    <div id="puzzle-holder">
-        <puzzle (isCorrectSolution)="updateStatistics($event)"></puzzle>
-    </div>
+  <hangman [mistakeCount]="mistakeCount" (onHangmanDead)="endGame($event)"></hangman>
+  <!-- <timer></timer> -->
+  <div id="puzzle-holder">
+    <puzzle
+      [puzzle]="puzzle"
+      (isCorrectSolution)="
+        updateStatistics($event) && updateHangmanState($event)
+      "
+    ></puzzle>
+  </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Statistics } from '../types/Statistics';
 
 @Component({
@@ -7,8 +7,8 @@ import { Statistics } from '../types/Statistics';
   styleUrls: ['./statistics.component.css']
 })
 export class StatisticsComponent {
-  gameStatistics: Statistics;
+  @Input() statistics: Statistics;
   constructor() {
-    this.gameStatistics = new Statistics();
+    this.statistics = new Statistics();
   }
 }

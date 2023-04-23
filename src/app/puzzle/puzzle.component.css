@@ -15,6 +15,7 @@ label {
 
 #operator {
     color: var(--red);
+    font-size: larger;
 }
 
 #line {
