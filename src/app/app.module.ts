@@ -12,6 +12,7 @@ import { StartComponent } from './start/start.component';
 import { GameComponent } from './game/game.component';
 import { PuzzleComponent } from './puzzle/puzzle.component';
 import { TimerComponent } from './timer/timer.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TimerComponent } from './timer/timer.component';
     GameComponent,
     PuzzleComponent,
     TimerComponent,
+    StatisticsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

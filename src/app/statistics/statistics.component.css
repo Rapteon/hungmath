@@ -1,0 +1,30 @@
+.solutions-count {
+    text-align: center;
+    border: 1px solid var(--light-grey);
+    padding: 4px;
+    margin: 1px;
+}
+
+#statistics {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: 1;
+    width: 5em;
+    margin: 1em;
+}
+
+#right-solutions-count {
+    grid-column: 1/2;
+}
+
+#right-solutions-count > div {
+    color: lightgreen;
+}
+
+#wrong-solutions-count {
+    grid-column: 2/2;
+}
+
+#wrong-solutions-count > div {
+    color: lightsalmon;
+}
