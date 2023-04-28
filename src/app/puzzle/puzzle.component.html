@@ -4,6 +4,6 @@
   <div id="operator">{{ puzzle.operator }}</div>
   <div class="primary-button operand">{{ puzzle.operandTwo }}</div>
   <hr id="line" />
-  <input #solution type="text" pattern="\d*" (keydown.enter)="checkSolution(solution.value)"/>
+  <input #solution type="number" pattern="\d*" (keydown.enter)="checkSolution(solution.value)"/>
   <button class="primary-button" type="button" (click)="checkSolution(solution.value)">Check</button>
 </div>
